@@ -2,17 +2,12 @@
 
 __version__ = '0.1'
 
-from requests import get
-from requests.exceptions import RequestException
-from contextlib import closing
-from colorama import Back, Fore, Style
-import pyperclip as clipboard
-from bs4 import BeautifulSoup
-import requests
-
 import argparse
 
-
+import pyperclip as clipboard
+import requests
+from bs4 import BeautifulSoup
+from colorama import Fore
 
 
 def create_clip(l, m):
@@ -60,10 +55,10 @@ def get_clip(l, c):
             print("")
         else:
             print(" ")
-            print("*************************************")
-            print("\t\tClip data")
-            print("*************************************")
-            print("")
+            print(Fore.BLUE + "*************************************")
+            print(Fore.BLUE + "\t\tClip data")
+            print(Fore.BLUE + "*************************************")
+            print(Fore.RESET + "")
             print(textContetnt.text)
             print(" ")
     else:

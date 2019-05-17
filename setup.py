@@ -4,7 +4,7 @@ with open("README.md", "r") as fh:
     long_description = fh.read()
 setuptools.setup(
     name='cl1p',
-    version='0.5',
+    version='0.6',
     author="Maulik Patel",
     author_email="maulikp163@gmail.com",
     description="Copy and paste using the internet",

@@ -58,7 +58,7 @@ def get_clip(l, c):
             print(Fore.BLUE + "*************************************")
             print(Fore.BLUE + "\t\tClip data")
             print(Fore.BLUE + "*************************************")
-            print("")
+            print(Fore.RESET + "")
             print(textContetnt.text)
             print(" ")
     else:

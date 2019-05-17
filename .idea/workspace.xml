@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="34714966-14b7-40c9-ac75-82716a6e2e82" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/cl1p/cl1p.py" beforeDir="false" afterPath="$PROJECT_DIR$/cl1p/cl1p.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/setup.py" beforeDir="false" afterPath="$PROJECT_DIR$/setup.py" afterDir="false" />
-    </list>
+    <list default="true" id="34714966-14b7-40c9-ac75-82716a6e2e82" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -13,11 +10,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/setup.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="56">
-              <caret line="6" column="16" selection-start-line="6" selection-start-column="16" selection-end-line="6" selection-end-column="16" />
+            <state relative-caret-position="476">
+              <caret line="21" column="6" selection-start-line="21" selection-start-column="6" selection-end-line="21" selection-end-column="6" />
             </state>
           </provider>
         </entry>
@@ -31,13 +28,13 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/cl1p/cl1p.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="280">
-              <caret line="64" column="28" selection-start-line="64" selection-start-column="28" selection-end-line="64" selection-end-column="28" />
+            <state relative-caret-position="476">
+              <caret line="60" column="30" selection-start-line="60" selection-start-column="30" selection-end-line="60" selection-end-column="30" />
               <folding>
-                <element signature="e#62#86#0" expanded="true" />
+                <element signature="e#62#77#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -67,8 +64,8 @@
         <option value="$PROJECT_DIR$/cl1p/__init__.py" />
         <option value="$PROJECT_DIR$/cl1p.py" />
         <option value="$PROJECT_DIR$/setup.cfg" />
-        <option value="$PROJECT_DIR$/cl1p/cl1p.py" />
         <option value="$PROJECT_DIR$/setup.py" />
+        <option value="$PROJECT_DIR$/cl1p/cl1p.py" />
       </list>
     </option>
   </component>
@@ -173,7 +170,7 @@
       <workItem from="1558032554600" duration="748000" />
       <workItem from="1558033793817" duration="2529000" />
       <workItem from="1558058592330" duration="2739000" />
-      <workItem from="1558063032043" duration="373000" />
+      <workItem from="1558063032043" duration="626000" />
     </task>
     <task id="LOCAL-00001" summary="updated version">
       <created>1558063102988</created>
@@ -182,11 +179,32 @@
       <option name="project" value="LOCAL" />
       <updated>1558063102988</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="added colour">
+      <created>1558063422867</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1558063422867</updated>
+    </task>
+    <task id="LOCAL-00003" summary="fix colour">
+      <created>1558063567777</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1558063567777</updated>
+    </task>
+    <task id="LOCAL-00004" summary="fix colour">
+      <created>1558063643029</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1558063643029</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="16055000" />
+    <option name="totallyTimeSpent" value="16308000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
@@ -282,7 +300,9 @@
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
     <MESSAGE value="updated version" />
-    <option name="LAST_COMMIT_MESSAGE" value="updated version" />
+    <MESSAGE value="added colour" />
+    <MESSAGE value="fix colour" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix colour" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -303,20 +323,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cl1p/cl1p.py">
+    <entry file="file://$PROJECT_DIR$/setup.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="64" column="28" selection-start-line="64" selection-start-column="28" selection-end-line="64" selection-end-column="28" />
-          <folding>
-            <element signature="e#62#86#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="476">
+          <caret line="21" column="6" selection-start-line="21" selection-start-column="6" selection-end-line="21" selection-end-column="6" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/setup.py">
+    <entry file="file://$PROJECT_DIR$/cl1p/cl1p.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="56">
-          <caret line="6" column="16" selection-start-line="6" selection-start-column="16" selection-end-line="6" selection-end-column="16" />
+        <state relative-caret-position="476">
+          <caret line="60" column="30" selection-start-line="60" selection-start-column="30" selection-end-line="60" selection-end-column="30" />
+          <folding>
+            <element signature="e#62#77#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

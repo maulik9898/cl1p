@@ -22,5 +22,43 @@ cl1p.net is a very quick and convient way to move data between devices connected
 
 Created and maintained by Rob Mayhew.Use at your own risk.
 
-v1.2.1 - March 17, 2019
+ <h2>Installation</h2>
+    <div class="line"></div>
 
+ Use pip to install cl1p.
+ 
+    pip install cl1p
+    
+ <h2>Usage</h2>
+    <div class="line"></div>
+    <h3>Create clip</h3>
+    <div class="line"></div> 
+    
+   Use '-l' flag to provide url for clip. Use '-m' flag to provide message for clip.
+    
+    cl1p -l newclip -m hii
+   Above command will create clip at https:cl1p.net/newclip with content 'hii'
+   
+   
+   You can also use '-d' flag to create clip directly from clipboard
+   
+    cl1p -l newclip -d
+    
+  <h3>Get clip</h3>
+    <div class="line"></div>
+    
+   Use '-l' flag to provide url for clip.
+   
+    clip -l newclip
+   Above command will fetch clip present at https:cl1p.net/newclip and show its content on terminal
+   
+   You can also use '-c' flag t copy clip content to clipboard.(Not tested on linux and Mac)
+   
+    clip -l newclip -c
+    
+    
+    
+    
+   
+   
+   

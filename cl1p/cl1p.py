@@ -70,16 +70,6 @@ def get_clip(l, c):
 def run():
     parser = argparse.ArgumentParser(
         description="cl1p.net lets you move information between computers using your internet")
-    parser.add_argument("-l", "--l",
-                        action='store',
-                        help='Set URL',
-                        type=str,
-                        required=True)
-    parser.add_argument("-m", "--m",
-                        action='store',
-                        help='Set clip message',
-                        type=str,
-                        required=False)
     parser.add_argument("-c", "--c",
                         action='store_true',
                         help='Copy clip content directly to clipboard',
@@ -87,6 +77,16 @@ def run():
     parser.add_argument("-d", "--d",
                         action='store_true',
                         help='Create clip directly from clipboard',
+                        required=False)
+    parser.add_argument("-l", "--l",
+                        action='store',
+                        help='Set link to clipboard name',
+                        type=str,
+                        required=True)
+    parser.add_argument("-m", "--m",
+                        action='store',
+                        help='Set clip message',
+                        type=str,
                         required=False)
 
     args = parser.parse_args()

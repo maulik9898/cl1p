@@ -1,0 +1,4 @@
+pyperclip
+beautifulsoup4
+colorama
+requests

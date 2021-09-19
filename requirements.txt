@@ -1,4 +1,4 @@
-pyperclip
 beautifulsoup4
 colorama
+pyperclip
 requests

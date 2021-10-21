@@ -56,9 +56,15 @@ Created and maintained by Rob Mayhew.Use at your own risk.
    
     clip -l newclip -c
     
-    
-    
-    
-   
-   
-   
+
+  <h3>Dockerized flavour</h3>
+  
+  To build the docker, just run:
+  ```bash
+   docker build -t myuser/cl1p .
+  ```
+
+  To use, you can create a clipboard online (i.e. with the name "test_cl1pboard") and have it displayed in the commandline in docker:
+  ```bash
+  docker run -it --rm myuser/cl1p cl1p -l test_cl1pboard
+  ```

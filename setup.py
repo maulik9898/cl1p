@@ -1,7 +1,15 @@
 import setuptools
 
+def parse_requirements(filename):
+    """load requirements from a pip requirements file"""
+    lineiter = (line.strip() for line in open(filename))
+    return [line for line in lineiter if line and not line.startswith("#")]
+
+INSTALL_DEPS = parse_requirements("requirements.txt")
+
 with open("README.md", "r") as fh:
     long_description = fh.read()
+
 setuptools.setup(
     name='cl1p',
     version='0.7',
@@ -20,9 +28,7 @@ setuptools.setup(
         "Operating System :: OS Independent",
 
     ],
-    install_requires=[
-        "pyperclip", "beautifulsoup4", "colorama", "requests"
-    ],
+    install_requires=INSTALL_DEPS,
     entry_points={
         'console_scripts': [
             'cl1p=cl1p.cl1p:run'

@@ -10,9 +10,9 @@ from bs4 import BeautifulSoup
 from colorama import Fore
 
 
-def create_clip(l, m):
+def create_clip(l, m, u):
     """Create clip """
-    url = 'https://cl1p.net/' + l
+    url = u + l
     response = requests.get(url)
     page = response.content
     soup = BeautifulSoup(page, 'html.parser')
@@ -39,9 +39,9 @@ def create_clip(l, m):
         print("")
 
 
-def get_clip(l, c):
+def get_clip(l, c, u):
     """get clip from cl1p.net"""
-    url = 'https://cl1p.net/' + l
+    url = u + l
     response = requests.get(url)
     page = response.content
     soup = BeautifulSoup(page, 'html.parser')
@@ -70,16 +70,6 @@ def get_clip(l, c):
 def run():
     parser = argparse.ArgumentParser(
         description="cl1p.net lets you move information between computers using your internet")
-    parser.add_argument("-l", "--l",
-                        action='store',
-                        help='Set URL',
-                        type=str,
-                        required=True)
-    parser.add_argument("-m", "--m",
-                        action='store',
-                        help='Set clip message',
-                        type=str,
-                        required=False)
     parser.add_argument("-c", "--c",
                         action='store_true',
                         help='Copy clip content directly to clipboard',
@@ -88,15 +78,30 @@ def run():
                         action='store_true',
                         help='Create clip directly from clipboard',
                         required=False)
-
+    parser.add_argument("-l", "--l",
+                        action='store',
+                        help='Set link to clipboard name',
+                        type=str,
+                        required=True)
+    parser.add_argument("-m", "--m",
+                        action='store',
+                        help='Set clip message',
+                        type=str,
+                        required=False)
+    parser.add_argument("-u", "--url",
+                        action='store',
+                        default='https://cl1p.net/'
+                        help='Set backend URL',
+                        type=str,
+                        required=False)
     args = parser.parse_args()
     if args.m is not None:
-        create_clip(args.l, args.m)
+        create_clip(args.l, args.m, args.u)
     elif args.d:
         text = clipboard.paste()
-        create_clip(args.l, text)
+        create_clip(args.l, text, args.u)
     else:
-        get_clip(args.l, args.c)
+        get_clip(args.l, args.c, args.u)
 
 
 if __name__ == '__main__':
